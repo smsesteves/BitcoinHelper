@@ -1,0 +1,25 @@
+{
+  "name": "bitcoinhelper",
+  "version": "0.0.1",
+  "description": "An app to help people learn about the basics of bitcoins",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.4.0",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smsesteves/BitcoinHelper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smsesteves/BitcoinHelper/issues"
+  },
+  "homepage": "https://github.com/smsesteves/BitcoinHelper#readme"
+}
