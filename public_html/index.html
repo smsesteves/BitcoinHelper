@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CryptoHelp | Introducing cryptocurrency concept to new users</title>   
+    <title>BitcoinHelper | Introducing cryptocurrency concept to new users</title>   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="description" content="">
@@ -22,7 +22,7 @@
     <link href="assets/libs/sortable/sortable-theme-bootstrap.css" rel="stylesheet" />
     <link href="assets/libs/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
     <link href="assets/libs/jquery-icheck/skins/all.css" rel="stylesheet" />
-	
+
     <!-- Code Highlighter for Demo -->
     <link href="assets/libs/prettify/github.css" rel="stylesheet" />
 
@@ -76,34 +76,6 @@
                 <div class="container">
                     <div class="navbar-collapse2">
                         <ul class="nav navbar-nav hidden-xs">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th"></i></a>
-                                <div class="dropdown-menu grid-dropdown">
-                                    <div class="row stacked">
-                                        <div class="col-xs-4">
-                                            <a href="javascript:;" data-app="notes-app" data-status="active"><i class="icon-edit"></i>Notes</a>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <a href="javascript:;" data-app="todo-app" data-status="active"><i class="icon-check"></i>Todo List</a>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <a href="javascript:;" data-app="calc" data-status="inactive"><i class="fa fa-calculator"></i>Calculator</a>
-                                        </div>
-                                    </div>
-                                    <div class="row stacked">
-                                        <div class="col-xs-4">
-                                            <a href="javascript:;" data-app="weather-widget" data-status="active"><i class="icon-cloud-3"></i>Weather</a>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <a href="javascript:;" data-app="calendar-widget2" data-status="active"><i class="icon-calendar"></i>Calendar</a>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <a href="javascript:;" data-app="stock-app" data-status="inactive"><i class="icon-chart-line"></i>Stocks</a>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </li>
                             <li class="language_bar dropdown hidden-xs">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <i class="fa fa-caret-down"></i></a>
                                 <ul class="dropdown-menu pull-right">
@@ -270,667 +242,278 @@
                 </div-->
                 <!-- End of info box -->
 
-				<div class="widget">
-					<div class="widget-header transparent">
-						<h2><strong>New</strong> User</h2>
-						<div class="additional-btn">
-							<a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-							<a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-							<a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-						</div>
-					</div>
-					<div class="widget-content padding" style="display: block;">
-						<form class="form-horizontal" role="form">
-						  <div class="form-group">
-							<label for="input-text" class="col-sm-2 control-label">ID</label>
-							<div class="col-sm-10">
-							  <input type="text" class="form-control" id="input-text" placeholder="Name for your test.">
-							</div>
-						  </div>
-						  
-						  <div class="form-group">
-							<label class="col-sm-2 control-label">Number of users</label>
-							<div class="col-sm-10">
-								<select class="form-control">
-								  <option>1</option>
-								  <option>10</option>
-								  <option>25</option>
-								  <option>50</option>
-								  <option>100</option>
-								</select>
-							</div>
-						  </div>
-						  
-						  <div class="form-group">
-							<label class="col-sm-2 control-label">Hardware</label>
-							<div class="col-sm-10">
-								<select class="form-control">
-								  <option>a</option>
-								  <option>b</option>
-								  <option>c</option>
-								  <option>d</option>
-								  <option>e</option>
-								</select>
-							</div>
-						  </div>
-						  <a class="btn btn-success"><i class="fa fa-plus-circle"></i> Add user</a>
-						  <button type="submit" class="btn btn-default"> Cancel </button>
-						  
-						  
-						</form>
-					</div>
-					
-				</div>
-				
-                <div class="row">
-                    <div class="col-lg-12 portlets">
-                        <div id="website-statistics1" class="widget">
-                            <div class="widget-header transparent">
-                                <h2><i class="icon-chart-line"></i> <strong>Mining</strong> difficulty over time</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a class="hidden" id="dropdownMenu1" data-toggle="dropdown">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="widget-content">
-                                <div id="website-statistic" class="statistic-chart">	
-                                    <div class="row stacked">
-                                        <div class="col-sm-12">
-                                            <div class="toolbar">
-                                                <div class="pull-left">
-                                                    <div class="btn-group">
-                                                        <a href="#" class="btn btn-default btn-xs">Daily</a>
-                                                        <a href="#" class="btn btn-default btn-xs active">Monthly</a>
-                                                        <a href="#" class="btn btn-default btn-xs">Yearly</a>
-                                                    </div>
-                                                </div>
-                                                <div class="pull-right">
-                                                    <div class="btn-group">
-                                                        <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                            Export <i class="icon-down-open-2"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu pull-right" role="menu">
-                                                            <li><a href="#">Export as PDF</a></li>
-                                                            <li><a href="#">Export as CSV</a></li>
-                                                            <li><a href="#">Export as PNG</a></li>
-                                                            <li class="divider"></li>
-                                                            <li><a href="#">Separated link</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <a href="#" class="btn btn-primary btn-xs"><i class="icon-cog-2"></i></a>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="morris-home" class="morris-chart" style="height: 270px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="widget">
+                   <div class="widget-header transparent">
+                      <h2><strong>New</strong> User</h2>
+                      <div class="additional-btn">
+                         <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+                         <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+                         <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
+                     </div>
+                 </div>
+                 <div class="widget-content padding" style="display: block;">
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                     <label for="input-text" class="col-sm-2 control-label">ID</label>
+                     <div class="col-sm-10">
+                       <input type="text" class="form-control" id="input-text" placeholder="Name for your test.">
+                   </div>
+               </div>
+
+               <div class="form-group">
+                 <label class="col-sm-2 control-label">Number of users</label>
+                 <div class="col-sm-10">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>10</option>
+                      <option>25</option>
+                      <option>50</option>
+                      <option>100</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="form-group">
+             <label class="col-sm-2 control-label">Hardware</label>
+             <div class="col-sm-10">
+                <select class="form-control">
+                  <option>a</option>
+                  <option>b</option>
+                  <option>c</option>
+                  <option>d</option>
+                  <option>e</option>
+              </select>
+          </div>
+      </div>
+      <a class="btn btn-success"><i class="fa fa-plus-circle"></i> Add user</a>
+      <button type="submit" class="btn btn-default"> Cancel </button>
 
 
-                    </div>
+  </form>
+</div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12 portlets">
+        <div id="website-statistics1" class="widget">
+            <div class="widget-header transparent">
+                <h2><i class="icon-chart-line"></i> <strong>Mining</strong> difficulty over time</h2>
+                <div class="additional-btn">
+                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+                    <a class="hidden" id="dropdownMenu1" data-toggle="dropdown">
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
+                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
+                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
                 </div>
-				
-				<div class="row">
-					<div class="col-md-12">
-						<div class="widget">
-							<div class="widget-header transparent">
-								<h2><strong>Users</strong></h2>
-								<div class="additional-btn">
-									<a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-									<a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-									<a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-								</div>
-							</div>
-							<div class="widget-content">
-								<div class="data-table-toolbar">
-									<div class="row">
-										<div class="col-md-4">
-											<form role="form">
-											<input type="text" class="form-control" placeholder="Search...">
-											</form>
-										</div>
-										<div class="col-md-8">
-											<div class="toolbar-btn-action">
-												<a class="btn btn-success"><i class="fa fa-plus-circle"></i> Add new</a>
-												<a class="btn btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-												<a class="btn btn-primary"><i class="fa fa-refresh"></i> Update</a>
-											</div>
-										</div>
-									</div>
-								</div>
-									
-								<div class="table-responsive">
-									<table data-sortable="" class="table table-hover table-striped" data-sortable-initialized="true">
-										<thead>
-											<tr>
-												<th>No</th>
-												<th style="width: 30px" data-sortable="false"><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></th>
-												<th>ID</th>
-												<th>Number of Users</th>
-												<th>Hardware</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										
-										<tbody>
-											<tr>
-												<td>1</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>John Doe</strong></td>
-												<td>Yogyakarta, Indonesia</td><td>January 01, 1985</td><td><span class="label label-success">Active</span></td>
-											</tr>
-											<tr>
-												<td>2</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Rusmanovski</strong></td>
-												<td>Bali, Indonesia</td><td>september 21, 1995</td><td><span class="label label-success">Active</span></td>
-											</tr>
-											<tr>
-												<td>3</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Annisa</strong></td>
-												<td>London, UK</td><td>September 23, 1996</td><td><span class="label label-success">Active</span></td>
-											</tr>
-											<tr>
-												<td>4</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Ari Rusmanto</strong></td>
-												<td>Jakarta, Indonesia</td><td>January 01, 1990</td><td><span class="label label-success">Active</span></td>
-											</tr>
-											<tr>
-												<td>5</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Jenny Doe</strong></td>
-												<td>New York, US</td><td>March 11, 1975</td></td><td><span class="label label-danger">Suspended</span></td>
-											</tr>
-											<tr>
-												<td>6</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Hana Sartika</strong></td>
-												<td>Semarang, Indonesia</td><td>June 23, 1991</td><td><span class="label label-success">Active</span></td>
-											</tr>
-											
-										</tbody>
-									</table>
-								</div>
-									
-								<div class="data-table-toolbar">
-									<ul class="pagination">
-									  <li class="disabled"><a href="#">«</a></li>
-									  <li class="active"><a href="#">1</a></li>
-									  <li><a href="#">2</a></li>
-									  <li><a href="#">3</a></li>
-									  <li><a href="#">4</a></li>
-									  <li><a href="#">5</a></li>
-									  <li><a href="#">»</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-						
-				</div>
-				
-                <div class="row" style="display:none">
-                    <div class="col-lg-8 portlets">
-                        <div class="widget">
-                            <div class="widget-header">
-                                <h2><i class="icon-chart-pie-1"></i> <strong>Sales</strong> Report</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a class="hidden" id="dropdownMenu1" data-toggle="dropdown">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="widget-content">
-                                <div class="row stacked">
-                                    <div class="col-sm-5 mini-stats">
-                                        <div id="morris-bar-home" class="morris-chart" style="height: 170px;"></div>
-                                        <div class="sales-report-data">
-                                            <span class="pull-left">Completed Sales</span><span class="pull-right">65 / 174</span>
-                                            <div class="progress progress-xs">
-                                                <div style="width: 38%;" class="progress-bar bg-blue-1"></div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <span class="pull-left">Return(s) Processed</span><span class="pull-right">22 / 25</span>
-                                            <div class="progress progress-xs">
-                                                <div style="width: 88%;" class="progress-bar bg-lightblue-1"></div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <span class="pull-left">Shipped Products</span><span class="pull-right">418 / 624</span>
-                                            <div class="progress progress-xs">
-                                                <div style="width: 58%;" class="progress-bar"></div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <span class="pull-left">Overall Product Stock</span><span class="pull-right">19%</span>
-                                            <div class="progress progress-xs">
-                                                <div style="width: 19%;" class="progress-bar bg-pink-1"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-7">
-                                        <div id="vector-map" style="height:370px"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 portlets">
-                        <div class="widget lightblue-2">
-                            <div class="widget-header transparent">
-                                <h2><strong>Server</strong> Status</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a class="hidden" id="dropdownMenu1" data-toggle="dropdown">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="widget-content">
-                                <div id="website-statistic2" class="statistic-chart">
-
-                                    <div class="col-sm-12 stacked">
-                                        <h4><i class="fa fa-circle-o text-green-1"></i> Server Loads</h4>
-                                        <div class="col-sm-8 status-data">
-
-                                            <div class="col-xs-12">
-                                                <div class="row stacked">
-                                                    <div class="col-xs-4 text-center right-border">
-                                                        Processes<br>
-                                                        <span class="animate-number" data-value="322" data-duration="3000">0</span>
-                                                    </div>
-                                                    <div class="col-xs-4 text-center right-border">
-                                                        Connections<br>
-                                                        <span class="animate-number" data-value="4789" data-duration="3000">0</span>
-                                                    </div>
-                                                    <div class="col-xs-4 text-center">
-                                                        Avg. Load<br>
-                                                        <span class="animate-number" data-value="76" data-duration="3000">0</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div class="progress progress-xs">
-                                                <div style="width: 72%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="72" role="progressbar" class="progress-bar bg-lightblue-1" title="Average Load: 76%" data-placement="right" data-toggle="tooltip">
-                                                    <span class="sr-only">72% Complete (success)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 text-center">
-                                            <div class="ws-load echart" data-percent="50"><span class="percent"></span></div>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div id="home-chart-2"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row" style="display:none">
-                    <div class="col-lg-4 portlets">
-                        <div id="calendar-widget2" class="widget blue-1">
-                            <div class="widget-header transparent">
-                                <h2><strong>Calendar</strong> Widget</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div id="calendar-box2" class="widget-content col-sm-12">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 portlets">
-                        <div id="weather-widget" class="widget">
-                            <div class="widget-header transparent">
-                                <h2><strong>Weather</strong> Widget</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a class="hidden" id="dropdownMenu1" data-toggle="dropdown">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div id="weather" class="widget-content">
-
-                            </div><i class="wi-day-rain-mix"></i>
-                            <button class="js-geolocation btn btn-sm btn-default" style="display: none;">Use Your Location</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 portlets">
-                        <div id="todo-app" class="widget">
-                            <div class="widget-header centered">
-                                <div class="left-btn"><a class="btn btn-sm btn-default add-todo"><i class="fa fa-plus"></i></a></div>
-                                <h2>Todo List</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="widget-content padding-sm">
-                                <ul class="todo-list">
-                                    <li>
-                                        <span class="check-icon"><input type="checkbox" /></span>
-                                        <span class="todo-item">Generate monthly sales report for John</span>
-                                        <span class="todo-options pull-right">
-                                            <a href="javascript:;" class="todo-delete"><i class="icon-cancel-3"></i></a>
-                                        </span>
-                                        <span class="todo-tags pull-right">
-                                            <div class="label label-success">New</div>
-                                        </span>
-                                    </li>
-                                    <li class="high">
-                                        <span class="check-icon"><input type="checkbox" /></span>
-                                        <span class="todo-item">Mail those reports to John</span>
-                                        <span class="todo-options pull-right">
-                                            <a href="javascript:;" class="todo-delete"><i class="icon-cancel-3"></i></a>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="check-icon"><input type="checkbox" /></span>
-                                        <span class="todo-item">Don't forget to send those reports to John</span>
-                                        <span class="todo-options pull-right">
-                                            <a href="javascript:;" class="todo-delete"><i class="icon-cancel-3"></i></a>
-                                        </span>
-                                    </li>
-                                    <li class="medium">
-                                        <span class="check-icon"><input type="checkbox" /></span>
-                                        <span class="todo-item">If you forgot, go back to office to pick them up</span>
-                                        <span class="todo-options pull-right">
-                                            <a href="javascript:;" class="todo-delete"><i class="icon-cancel-3"></i></a>
-                                        </span>
-                                        <span class="todo-tags pull-right">
-                                            <div class="label label-info">Today</div>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="check-icon"><input type="checkbox" /></span>
-                                        <span class="todo-item">Say John that you are sorry</span>
-                                        <span class="todo-options pull-right">
-                                            <a href="javascript:;" class="todo-delete"><i class="icon-cancel-3"></i></a>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="check-icon"><input type="checkbox" /></span>
-                                        <span class="todo-item">Look for a new job</span>
-                                        <span class="todo-options pull-right">
-                                            <a href="javascript:;" class="todo-delete"><i class="icon-cancel-3"></i></a>
-                                        </span>
-                                        <span class="todo-tags pull-right">
-                                            <div class="label label-warning"><i class="icon-search"></i></div>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="display:none">
-                    <div class="col-lg-4 col-md-6 portlets">
-                        <div id="stock-app" class="widget green-3">
-                            <div class="widget-header transparent">
-                                <h2><strong>Stock</strong> Markets</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a class="hidden" id="dropdownMenu1" data-toggle="dropdown">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="widget-content">
-                                <div id="website-statistic3" class="statistic-chart">	
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <h2>NASDAQ</h2>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label id="nasdaq-status" class="stock-status"></label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <h2>DOW JONES</h2>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label id="dow-status" class="stock-status"></label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <h2>S&P</h2>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label id="sp-status" class="stock-status"></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="home-chart-3"></div>
-                            </div>
-                            <div class="widget-footer">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portlets">
-                        <div id="notes-app" class="widget">
-                            <div class="notes-line"></div>
-                            <div class="widget-header centered transparent">
-                                <div class="left-btn btn-group"><a class="btn btn-sm btn-primary add-note"><i class="fa fa-plus"></i></a><a class="btn btn-sm btn-primary back-note-list"><i class="icon-align-justify"></i></a></div>
-                                <h2>Notes</h2>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
-                                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="widget-content padding-sm">
-                                <div id="notes-list">
-                                    <div class="scroller">
-                                        <ul class="list-unstyled">
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="note-data">
-                                    <form>
-                                        <textarea class="form-control" id="note-text" placeholder="Your note..."></textarea>
-                                    </form>
-                                </div>
-                                <div class="status-indicator">Saved</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portlets">
-                        <div id="calc" class="widget darkblue-2">
-                            <div class="widget-header">
-                                <div class="additional-btn left-toolbar">
+            </div>
+            <div class="widget-content">
+                <div id="website-statistic" class="statistic-chart">	
+                    <div class="row stacked">
+                        <div class="col-sm-12">
+                            <div class="toolbar">
+                                <div class="pull-left">
                                     <div class="btn-group">
-                                        <a class="additional-icon" id="dropdownMenu2" data-toggle="dropdown">
-                                            Calculator <i class="fa fa-angle-down"></i>
+                                        <a href="#" class="btn btn-default btn-xs">Daily</a>
+                                        <a href="#" class="btn btn-default btn-xs active">Monthly</a>
+                                        <a href="#" class="btn btn-default btn-xs">Yearly</a>
+                                    </div>
+                                </div>
+                                <div class="pull-right">
+                                    <div class="btn-group">
+                                        <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                            Export <i class="icon-down-open-2"></i>
                                         </a>
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-                                            <li><a href="#">Save</a></li>
-                                            <li><a href="#">Export</a></li>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#">Export as PDF</a></li>
+                                            <li><a href="#">Export as CSV</a></li>
+                                            <li><a href="#">Export as PNG</a></li>
                                             <li class="divider"></li>
-                                            <li><a href="#">Quit</a></li>
+                                            <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="additional-btn">
-                                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
-
-                                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
-                                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
-                                </div>
-                            </div>
-                            <div id="calculator" class="widget-content">
-                                <div class="calc-top col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-3"><span class="calc-clean">C</span></div>
-                                        <div class="col-xs-9"><div class="calc-screen"></div></div>
-                                    </div>
-                                </div>
-
-                                <div class="calc-keys col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-3"><span>7</span></div>
-                                        <div class="col-xs-3"><span>8</span></div>
-                                        <div class="col-xs-3"><span>9</span></div>
-                                        <div class="col-xs-3"><span class="calc-operator">+</span></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-3"><span>4</span></div>
-                                        <div class="col-xs-3"><span>5</span></div>
-                                        <div class="col-xs-3"><span>6</span></div>
-                                        <div class="col-xs-3"><span class="calc-operator">-</span></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-3"><span>1</span></div>
-                                        <div class="col-xs-3"><span>2</span></div>
-                                        <div class="col-xs-3"><span>3</span></div>
-                                        <div class="col-xs-3"><span class="calc-operator">÷</span></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-3"><span>0</span></div>
-                                        <div class="col-xs-3"><span>.</span></div>
-                                        <div class="col-xs-3"><span class="calc-eval">=</span></div>
-                                        <div class="col-xs-3"><span class="calc-operator">x</span></div>
-                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs"><i class="icon-cog-2"></i></a>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
+                            <div class="clearfix"></div>
+                            <div id="morris-home" class="morris-chart" style="height: 270px;"></div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Footer Start -->
-                <footer>
-                    SSIN FEUP &copy; 2015 - Group 1
-                    <div class="footer-links pull-right">
-                        <a href="#">Daniele Boscolo</a><a href="#">Gonçalo Lobo</a><a href="#">Rui Grandão</a><a href="#">Sérgio Esteves</a>
-                    </div>
-                </footer>
-                <!-- Footer End -->			
             </div>
-            <!-- ============================================================== -->
-            <!-- End content here -->
-            <!-- ============================================================== -->
-
         </div>
-        <!-- End right content -->
+
 
     </div>
+</div>
 
-    <!-- End of page -->
+<div class="row">
+   <div class="col-md-12">
+      <div class="widget">
+         <div class="widget-header transparent">
+            <h2><strong>Users</strong></h2>
+            <div class="additional-btn">
+               <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+               <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+               <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
+           </div>
+       </div>
+       <div class="widget-content">
+        <div class="data-table-toolbar">
+           <div class="row">
+              <div class="col-md-4">
+                 <form role="form">
+                     <input type="text" class="form-control" placeholder="Search...">
+                 </form>
+             </div>
+             <div class="col-md-8">
+                 <div class="toolbar-btn-action">
+                    <a class="btn btn-success"><i class="fa fa-plus-circle"></i> Add new</a>
+                    <a class="btn btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
+                    <a class="btn btn-primary"><i class="fa fa-refresh"></i> Update</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        var resizefunc = [];
-    </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/libs/jquery/jquery-1.11.1.min.js"></script>
-    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/libs/jqueryui/jquery-ui-1.10.4.custom.min.js"></script>
-    <script src="assets/libs/jquery-ui-touch/jquery.ui.touch-punch.min.js"></script>
-    <script src="assets/libs/jquery-detectmobile/detect.js"></script>
-    <script src="assets/libs/jquery-animate-numbers/jquery.animateNumbers.js"></script>
-    <script src="assets/libs/ios7-switch/ios7.switch.js"></script>
-    <script src="assets/libs/fastclick/fastclick.js"></script>
-    <script src="assets/libs/jquery-blockui/jquery.blockUI.js"></script>
-    <script src="assets/libs/bootstrap-bootbox/bootbox.min.js"></script>
-    <script src="assets/libs/jquery-slimscroll/jquery.slimscroll.js"></script>
-    <script src="assets/libs/jquery-sparkline/jquery-sparkline.js"></script>
-    <script src="assets/libs/nifty-modal/js/classie.js"></script>
-    <script src="assets/libs/nifty-modal/js/modalEffects.js"></script>
-    <script src="assets/libs/sortable/sortable.min.js"></script>
-    <script src="assets/libs/bootstrap-fileinput/bootstrap.file-input.js"></script>
-    <script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
-    <script src="assets/libs/bootstrap-select2/select2.min.js"></script>
-    <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script> 
-    <script src="assets/libs/pace/pace.min.js"></script>
-    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-    <script src="assets/libs/jquery-icheck/icheck.min.js"></script>
+    <div class="table-responsive">
+       <table data-sortable="" class="table table-hover table-striped" data-sortable-initialized="true">
+          <thead>
+             <tr>
+                <th>No</th>
+                <th style="width: 30px" data-sortable="false"><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></th>
+                <th>ID</th>
+                <th>Number of Users</th>
+                <th>Hardware</th>
+                <th>Status</th>
+            </tr>
+        </thead>
 
-    <!-- Demo Specific JS Libraries -->
-    <script src="assets/libs/prettify/prettify.js"></script>
+        <tbody>
+         <tr>
+            <td>1</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>John Doe</strong></td>
+            <td>Yogyakarta, Indonesia</td><td>January 01, 1985</td><td><span class="label label-success">Active</span></td>
+        </tr>
+        <tr>
+            <td>2</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Rusmanovski</strong></td>
+            <td>Bali, Indonesia</td><td>september 21, 1995</td><td><span class="label label-success">Active</span></td>
+        </tr>
+        <tr>
+            <td>3</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Annisa</strong></td>
+            <td>London, UK</td><td>September 23, 1996</td><td><span class="label label-success">Active</span></td>
+        </tr>
+        <tr>
+            <td>4</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Ari Rusmanto</strong></td>
+            <td>Jakarta, Indonesia</td><td>January 01, 1990</td><td><span class="label label-success">Active</span></td>
+        </tr>
+        <tr>
+            <td>5</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Jenny Doe</strong></td>
+            <td>New York, US</td><td>March 11, 1975</td></td><td><span class="label label-danger">Suspended</span></td>
+        </tr>
+        <tr>
+            <td>6</td><td><div class="icheckbox_square-aero" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" class="rows-check" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div></td><td><strong>Hana Sartika</strong></td>
+            <td>Semarang, Indonesia</td><td>June 23, 1991</td><td><span class="label label-success">Active</span></td>
+        </tr>
 
-    <script src="assets/js/init.js"></script>
-    <!-- Page Specific JS Libraries -->
-    <script src="assets/libs/d3/d3.v3.js"></script>
-    <script src="assets/libs/rickshaw/rickshaw.min.js"></script>
-    <script src="assets/libs/raphael/raphael-min.js"></script>
-    <script src="assets/libs/morrischart/morris.min.js"></script>
-    <script src="assets/libs/jquery-knob/jquery.knob.js"></script>
-    <script src="assets/libs/jquery-jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="assets/libs/jquery-jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="assets/libs/jquery-clock/clock.js"></script>
-    <script src="assets/libs/jquery-easypiechart/jquery.easypiechart.min.js"></script>
-    <script src="assets/libs/jquery-weather/jquery.simpleWeather-2.6.min.js"></script>
-    <script src="assets/libs/bootstrap-xeditable/js/bootstrap-editable.min.js"></script>
-    <script src="assets/libs/bootstrap-calendar/js/bic_calendar.min.js"></script>
-    <script src="assets/js/apps/calculator.js"></script>
-    <script src="assets/js/apps/todo.js"></script>
-    <script src="assets/js/apps/notes.js"></script>
-    <script src="assets/js/pages/index.js"></script>
-	<script src="assets/libs/jquery-icheck/icheck.min.js"></script>
+    </tbody>
+</table>
+</div>
+
+<div class="data-table-toolbar">
+   <ul class="pagination">
+     <li class="disabled"><a href="#">«</a></li>
+     <li class="active"><a href="#">1</a></li>
+     <li><a href="#">2</a></li>
+     <li><a href="#">3</a></li>
+     <li><a href="#">4</a></li>
+     <li><a href="#">5</a></li>
+     <li><a href="#">»</a></li>
+ </ul>
+</div>
+</div>
+</div>
+
+
+
+<!-- Footer Start -->
+<footer>
+    SSIN FEUP &copy; 2015 - Group 1
+    <div class="footer-links pull-right">
+        <a href="#">Daniele Boscolo</a><a href="#">Gonçalo Lobo</a><a href="#">Rui Grandão</a><a href="#">Sérgio Esteves</a>
+    </div>
+</footer>
+<!-- Footer End -->			
+</div>
+<!-- ============================================================== -->
+<!-- End content here -->
+<!-- ============================================================== -->
+
+</div>
+<!-- End right content -->
+
+</div>
+
+<!-- End of page -->
+
+<script>
+    var resizefunc = [];
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="assets/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/libs/jqueryui/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="assets/libs/jquery-ui-touch/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/libs/jquery-detectmobile/detect.js"></script>
+<script src="assets/libs/jquery-animate-numbers/jquery.animateNumbers.js"></script>
+<script src="assets/libs/ios7-switch/ios7.switch.js"></script>
+<script src="assets/libs/fastclick/fastclick.js"></script>
+<script src="assets/libs/jquery-blockui/jquery.blockUI.js"></script>
+<script src="assets/libs/bootstrap-bootbox/bootbox.min.js"></script>
+<script src="assets/libs/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script src="assets/libs/jquery-sparkline/jquery-sparkline.js"></script>
+<script src="assets/libs/nifty-modal/js/classie.js"></script>
+<script src="assets/libs/nifty-modal/js/modalEffects.js"></script>
+<script src="assets/libs/sortable/sortable.min.js"></script>
+<script src="assets/libs/bootstrap-fileinput/bootstrap.file-input.js"></script>
+<script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/libs/bootstrap-select2/select2.min.js"></script>
+<script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<script src="assets/libs/pace/pace.min.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="assets/libs/jquery-icheck/icheck.min.js"></script>
+
+<!-- Demo Specific JS Libraries -->
+<script src="assets/libs/prettify/prettify.js"></script>
+
+<script src="assets/js/init.js"></script>
+<!-- Page Specific JS Libraries -->
+<script src="assets/libs/d3/d3.v3.js"></script>
+<script src="assets/libs/rickshaw/rickshaw.min.js"></script>
+<script src="assets/libs/raphael/raphael-min.js"></script>
+<script src="assets/libs/morrischart/morris.min.js"></script>
+<script src="assets/libs/jquery-knob/jquery.knob.js"></script>
+<script src="assets/libs/jquery-jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="assets/libs/jquery-jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="assets/libs/jquery-clock/clock.js"></script>
+<script src="assets/libs/jquery-easypiechart/jquery.easypiechart.min.js"></script>
+<script src="assets/libs/jquery-weather/jquery.simpleWeather-2.6.min.js"></script>
+<script src="assets/libs/bootstrap-xeditable/js/bootstrap-editable.min.js"></script>
+<script src="assets/libs/bootstrap-calendar/js/bic_calendar.min.js"></script>
+<script src="assets/js/apps/calculator.js"></script>
+<script src="assets/js/apps/todo.js"></script>
+<script src="assets/js/apps/notes.js"></script>
+<script src="assets/js/pages/index.js"></script>
+<script src="assets/libs/jquery-icheck/icheck.min.js"></script>
 </body>
 </html>

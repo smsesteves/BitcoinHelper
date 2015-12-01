@@ -1388,7 +1388,7 @@ i.online {
 hr.divider {
   border-color: rgba(255,255,255,0.1);
   width: 90%;
-  margin: 10px 5%;
+  margin: 15px 5%;
   display: block;
   clear: both;
 }
@@ -5505,3 +5505,5 @@ footer .footer-links a:hover {
 footer .footer-links a:last-child {
   border: none;
 }
+.yay { width:49.8%;float:left } .nay { width:49.8%;float:right }
+.narrow {margin-left:50px!important;}
