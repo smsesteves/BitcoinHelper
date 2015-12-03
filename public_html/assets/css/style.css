@@ -5521,9 +5521,21 @@ blockquote {
 
 .btn-warning.disabled { background-color:#FFA100;
 }
+
 #guideNote{    font-size: 9px;
     opacity: 0.5;
     float: right;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 17px;}
+
+.form-group{
+    width: 33%;
+    display: inline-block;
+}
+.form-group>.col-sm-10 {
+    width: 98%;
+}
+sub {
+    bottom: 0;
+}

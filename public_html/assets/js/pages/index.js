@@ -89,8 +89,21 @@ $(document).ready(function(){
         qStart.fadeOut(500,function(){
           $('#finalState').children().first().text('Start mining!');
           $('#finalState').children().last().append(
-              "<h3>Falta texto.</p><br>"
-            + "<p>Bastante texto.</p>");
+              "<p>If you like technology and have some very powerful computers around, you can try bitcoin mining.</p>"
+            + "<p>You can buy hardware mining devices (called ASIC chips) to start mining bitcoins on your own. "
+            + "Currently, with the increase of mining difficulty, using your personal computer to mine is not worth anymore.</p>"
+            + "<p>Before investing in mining hardware, consider the cost of your <a href='http://www.coinwarz.com/calculators/bitcoin-mining-calculator/?h=5500.00&p=18880.00&pc=0.05&pf=0.00&d=46684376316.86030000&r=25.00000000&er=248.79000000&hc=2300.00'>bitcoin mining operation vs return on investment</a>. "
+            + "As it stands, mining solo is pretty much deprecated. The process of finding blocks is now so popular and the difficulty "
+            + "of finding a block so high that it could take over three years to generate any coins.</p><p>While you could simply set a "
+            + "machine aside and have it run the algorithms endlessly, the energy cost and equipment depreciation will eventually cost more than the actual bitcoins are worth.<br><br></p>"
+            + "<p>Pros:</p>"
+            + "<p><ul><li>Can be very profitable if power cost is low and you already have the hardware/computing power needed</li></ul></p>"
+            + "<p>Cons:</p>"
+            + "<p><ul><li>High cost of electricity can make bitcoin mining unprofitable</li>"
+            + "<li>Expensive cost of mining hardware</li>"
+            + "<li>Higher computing power required & increasing difficulty to mine bitcoins make mining hardware obsolete very fast</li></ul></p><br><br>"
+            + "<h4>Bitcoin Mining Hardware Comparison</h4>"
+            + "<div class='table-responsive'><table class='table table-hover'><tbody><tr><th>Manufacturer</th><td>AntMiner S5</td><td>AntMiner S5</td><td>AntMiner S5</td></tr></tbody></table></div>");
           $('#finalState').fadeIn(500);
         });
       }
@@ -218,6 +231,36 @@ $(document).ready(function(){
       default: break;
     }
   });
+
+  $('#addUser').click(function(){
+
+    var userID = $('#userID').val();
+    var userHW = $('#userHW').val();
+    var table = $('#userTable>tbody');
+
+    if(userID.length<1 || userHW=="Choose your hardware..."){
+      alert('Please enter ID and choose hardware.')
+      return;
+    }
+
+    if(table.html().indexOf(userID) > -1){
+      alert('User ID already exists in table');
+      return;
+    }
+
+     
+
+
+
+    
+    if($('#userTable>tbody>tr>td').text()[0] == "-")
+      table.empty();
+    
+    table.append('<tr><td>'+userID+'</td><td>'+userHW+'</td><td>0.0</td><td><span class="label label-success">Active</span></td></tr>');
+
+    }
+  );
+  
 
   load_charts();
   
