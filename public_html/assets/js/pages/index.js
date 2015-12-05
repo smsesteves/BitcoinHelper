@@ -271,10 +271,12 @@ $(document).ready(function () {
                 table.empty();
 
             var BTCid = "userID_" + userID;
-            table.append('<tr><td>' + userID + '</td><td>' + userHW + '</td><td id=' + BTCid + '>0.0</td><td><span class="label label-success">Active</span></td></tr>');
+            table.append('<tr><td>' + userID + '</td><td>' + userHW + '</td><td id=' + BTCid + '>0.0</td><td><span onclick="setStatus(this)" id="setStatus" class="clickableStatus label label-success">Active</span></td></tr>');
 
         }
     );
+
+
 
     console.log("Block 0 is starting");
     load_charts();
@@ -389,8 +391,27 @@ function load_charts() {
         labels: ['Average Speed', 'Total Speed', 'Mining Difficulty'],
         hideHover: 'auto'
     });
+
+
+
 }
 
+
+function setStatus(t){
+
+        var obj = $(t);
+
+        if(obj.hasClass('label-success')){
+            obj.removeClass('label-success');
+            obj.addClass('label-danger');
+            obj.text("Inactive");
+        } else {
+            obj.removeClass('label-danger');
+            obj.addClass('label-success');
+            obj.text("Active");
+        }
+
+}
 
 function sleep(milliseconds) {
     var start = new Date().getTime();
