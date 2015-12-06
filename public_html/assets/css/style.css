@@ -5539,3 +5539,12 @@ blockquote {
 sub {
     bottom: 0;
 }
+#divSecurity>p,#divFuture>p {
+      text-indent: 10px;
+      font-family: 'Open Sans';
+      font-weight: 300;
+      color: #505458;
+}
+.clickableStatus {
+    cursor: pointer;
+}
