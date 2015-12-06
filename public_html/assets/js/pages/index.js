@@ -271,14 +271,14 @@ $(document).ready(function () {
                 table.empty();
 
             var BTCid = "userID_" + userID;
-            table.append('<tr><td>' + userID + '</td><td>' + userHW + '</td><td id=' + BTCid + '>0.0</td><td><span onclick="setStatus(this)" id="setStatus" class="clickableStatus label label-success">Active</span></td></tr>');
+            table.append('<tr><td>' + userID + '</td><td>' + userHW + '</td><td id=' + BTCid + '>0.0</td><td><span onclick="setStatus(this)" id="setStatus' + userID + '" class="clickableStatus label label-success">Active</span></td></tr>');
 
         }
     );
 
 
 
-    console.log("Block 0 is starting");
+    // console.log("Block 0 is starting");
     load_charts();
 
 });
@@ -318,14 +318,20 @@ var block_no = 0;
 function load_charts() {
 
     var total_spd = 0;
-    var no_users = $('#userTable').find('> tbody > tr').length;
+    var no_users = 0;
     var avg_spd = 0;
 
     // Get data from table info
     // console.log("--- TABLE ---");
     $('#userTable').find('> tbody > tr').each(function (i, row) {
         // console.log(i, row.innerHTML);
-        total_spd += parseInt(row.innerHTML.split('~')[1].split(' ')[0]);
+        var id = parseInt(i)+1;
+
+        var user_status = $("#setStatus" + id);
+        if(user_status[0].innerHTML == "Active") {
+            total_spd += parseInt(row.innerHTML.split('~')[1].split(' ')[0]);
+            no_users++;
+        }
     });
 
     var mining_diff = total_spd * 10;
@@ -370,7 +376,11 @@ function load_charts() {
             console.log("He currently has " + parseFloat(user_coins_element[0].innerHTML) + " coins!");
             console.log("innerHTML is " + user_coins_element[0].innerHTML);
             */
-            user_coins_element.html(parseFloat(user_coins_element[0].innerHTML) + awarded_coins);
+
+            var user_status = $("#setStatus" + id);
+            if(user_status[0].innerHTML == "Active") {
+                user_coins_element.html(parseFloat(user_coins_element[0].innerHTML) + awarded_coins);
+            }
         });
         block_no++;
         // console.log("Block " + block_no + " is starting.");
