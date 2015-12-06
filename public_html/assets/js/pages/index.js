@@ -108,8 +108,21 @@ $(document).ready(function () {
                         + "<p><ul><li>High cost of electricity can make bitcoin mining unprofitable</li>"
                         + "<li>Expensive cost of mining hardware</li>"
                         + "<li>Higher computing power required & increasing difficulty to mine bitcoins make mining hardware obsolete very fast</li></ul></p><br><br>"
-                        + "<h4>Bitcoin Mining Hardware Comparison</h4>"
-                        + "<div class='table-responsive'><table class='table table-hover'><tbody><tr><th>Manufacturer</th><td>AntMiner S5</td><td>AntMiner S5</td><td>AntMiner S5</td></tr></tbody></table></div>");
+                        + "<h4>Bitcoin Mining Hardware</h4><br>"
+                        + "<div class='table-responsive'><table class='table table-hover'><tbody>"
+                        + "<tr><th>Manufacturer:</th><td>AntMiner S5</td><td>Spondoolies Tech SP20 Jackson</td><td>BPMC Red Fury USB</td></tr>"
+                        + "<tr><th>Advertised Capacity:</th><td>1,155 Gh/s</td><td>1,500 Gh/s</td><td>2.5 Gh/s</td></tr>"
+                        + "<tr><th>Power Efficiency:</th><td>0.51 W/Gh</td><td> .80 W/Gh</td><td>1.00 W/Gh</td></tr>"
+                        + "<tr><th>Av. Price:</th><td>380.00</td><td>€440.00</td><td>€40.00</td></tr>"
+                        + "</tbody></table></div><br><br>"
+                        + "<h4>Bitcoin Mining Software</h4><br>"
+                        + "<p>Once you've received your bitcoin mining hardware, you'll need to download a program used for Bitcoin mining.<br>There are many programs out there that can be used for Bitcoin mining, but the most popular is <a href='http://bfgminer.org/'>BFGminerd</a>  which are command line programs.<br>If you prefer the ease of use that comes with a GUI, you might want to try <a href='https://play.google.com/store/apps/details?id=com.mr.app.ui&hl=pt_PT'>EasyMiner</a> which is a click and go windows/Linux/Android program.</p><br><br>"
+                        + "<h4>Bitcoin Mining Pools</h4><br>"
+                        + "<p>After acquiring your hardware and having your mining software ready to work, we recommend joining a Bitcoin mining pool. Bitcoin mining pools are groups of Bitcoin miners working together to solve a block and share in it's rewards. Without a Bitcoin mining pool, you might mine bitcoins for over a year and never earn any bitcoins. It's far more convenient to share the work and split the reward with a much larger group of Bitcoin miners. There are many websites dedicated to gathering users on mining pools, we suggest <a href='https://ghash.io/'>GHash.io</a>.</p><br><br>"
+                        + "<h4>Bitcoin Wallet</h4><br>"
+                        + "<p>The last step to mining bitcoins is to set up a Bitcoin wallet to receive the Bitcoins you mine. A Bitcoin wallet is like a traditional wallet and can be software, mobile or web-based. Bitcoin hardware wallets are also available.</p>"
+                        + "<p>There are great Bitcoin software wallets, for practical purposes we suggest using <a href='https://copay.io/'>CoPay</a> because it's available in all platforms and it's open source.</p>"
+                        );
                     $('#finalState').fadeIn(500);
                 });
             }
