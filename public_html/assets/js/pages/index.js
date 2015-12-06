@@ -359,7 +359,7 @@ function load_charts() {
             awarded_coins = (miner_spd / total_spd) * 25;
             var id = parseInt(i)+1;
             console.log($("#userID_" + id));
-            
+
             $("#userID_" + id).html(parseFloat($("#userID_" + id).innerHTML) + awarded_coins);
         });
         block_no++;
