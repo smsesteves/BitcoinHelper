@@ -401,7 +401,7 @@ function load_charts() {
         console.log("Block " + block_no + " is starting.");
 
         // (COR {green,yellow,red,blue} + titulo + mensagem + tempo de display)
-        autohidenotify(,'green',"Message title here","Block " + block_no + " is starting.", 5000);
+        autohidenotify('green',"Message title here","Block " + block_no + " is starting.", 5000);
         
         block_counter = 0;
     }
