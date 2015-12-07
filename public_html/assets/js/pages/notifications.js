@@ -49,7 +49,7 @@ function autohidenotify(style,ttl,txt,duration) {
     }else if(style == "green"){
         cn = "success";
     }else if(style == "red"){
-        cn = "danger";
+        cn = "error";
     }else{
         cn = "success";
     }
