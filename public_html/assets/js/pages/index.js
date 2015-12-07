@@ -264,9 +264,9 @@ $(document).ready(function () {
         }
     });
 
+	var userID = 1;
     $('#addUser').click(function () {
 
-            var userID = $('#userID').val();
             var userHW = $('#userHW').val();
             var table = $('#userTable>tbody');
 
@@ -286,6 +286,8 @@ $(document).ready(function () {
             var BTCid = "userID_" + userID;
             table.append('<tr><td>' + userID + '</td><td>' + userHW + '</td><td id=' + BTCid + '>0.0</td><td><span onclick="setStatus(this)" id="setStatus' + userID + '" class="clickableStatus label label-success">Active</span></td></tr>');
 
+			userID++;
+			$('#userID').val(userID);
         }
     );
 
