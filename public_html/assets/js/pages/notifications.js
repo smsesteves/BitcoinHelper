@@ -1,15 +1,15 @@
 function notify(style,position) {
-	if(style == "error"){
-		icon = "fa fa-exclamation";
-	}else if(style == "warning"){
-		icon = "fa fa-warning";
-	}else if(style == "success"){
-		icon = "fa fa-check";
-	}else if(style == "info"){
-		icon = "fa fa-question";
-	}else{
-		icon = "fa fa-circle-o";
-	}
+    if(style == "error"){
+        icon = "fa fa-exclamation";
+    }else if(style == "warning"){
+        icon = "fa fa-warning";
+    }else if(style == "success"){
+        icon = "fa fa-check";
+    }else if(style == "info"){
+        icon = "fa fa-question";
+    }else{
+        icon = "fa fa-circle-o";
+    }
     $.notify({
         title: 'Sample Notification',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae orci ut dolor scelerisque aliquam.',
@@ -25,7 +25,7 @@ function notify(style,position) {
         clickToHide: true
     });
 }
-
+ 
 function notify2(style,position) {
     $(".autohidebut").notify({
         text: '<i class="fa fa-comment-o"></i> Hi buddy. I\'m here!'
@@ -40,36 +40,27 @@ function notify2(style,position) {
         clickToHide: true
     });
 }
-
-function autohidenotify(style,position) {
- 	if(style == "error"){
-		icon = "fa fa-exclamation";
-	}else if(style == "warning"){
-		icon = "fa fa-warning";
-	}else if(style == "success"){
-		icon = "fa fa-check";
-	}else if(style == "info"){
-		icon = "fa fa-question";
-	}else{
-		icon = "fa fa-circle-o";
-	}   
+ 
+function autohidenotify(ttl,txt,duration) {
+    icon = "fa fa-exclamation";
+    
     $.notify({
-        title: 'I will be closed in 3 seconds...',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae orci ut dolor scelerisque aliquam.',
-        image: "<i class='fa fa-warning'></i>"
+        title: '<b>'+ttl+'</b>',
+        text: txt,
+        image: "<i class='fa fa-exclamation'></i>"
     }, {
         style: 'metro',
-        className: style,
-        globalPosition:position,
+        className: 'success',
+        globalPosition:'top center',
         showAnimation: "show",
         showDuration: 0,
         hideDuration: 0,
-        autoHideDelay: 3000,
+        autoHideDelay: duration,
         autoHide: true,
         clickToHide: true
     });
 }
-
+ 
 function nconfirm() {
     $.notify({
         title: 'Are you nuts?!',
@@ -85,17 +76,17 @@ function nconfirm() {
         clickToHide: false
     });
 }
-
+ 
 $(function(){
-	//listen for click events from this style
-	$(document).on('click', '.notifyjs-metro-base .no', function() {
-	  //programmatically trigger propogating hide event
-	  $(this).trigger('notify-hide');
-	});
-	$(document).on('click', '.notifyjs-metro-base .yes', function() {
-	  //show button text
-	  alert($(this).text() + " clicked!");
-	  //hide notification
-	  $(this).trigger('notify-hide');
-	});
+    //listen for click events from this style
+    $(document).on('click', '.notifyjs-metro-base .no', function() {
+      //programmatically trigger propogating hide event
+      $(this).trigger('notify-hide');
+    });
+    $(document).on('click', '.notifyjs-metro-base .yes', function() {
+      //show button text
+      alert($(this).text() + " clicked!");
+      //hide notification
+      $(this).trigger('notify-hide');
+    });
 })
