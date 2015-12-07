@@ -41,7 +41,19 @@ function notify2(style,position) {
     });
 }
  
-function autohidenotify(ttl,txt,duration) {
+function autohidenotify(style,ttl,txt,duration) {
+    if(style == "blue"){
+        cn = "info";
+    }else if(style == "yellow"){
+        cn = "warning";
+    }else if(style == "green"){
+        cn = "success";
+    }else if(style == "red"){
+        cn = "danger";
+    }else{
+        cn = "success";
+    }
+
     icon = "fa fa-exclamation";
     
     $.notify({
@@ -50,7 +62,7 @@ function autohidenotify(ttl,txt,duration) {
         image: "<i class='fa fa-exclamation'></i>"
     }, {
         style: 'metro',
-        className: 'success',
+        className: cn,
         globalPosition:'top center',
         showAnimation: "show",
         showDuration: 0,

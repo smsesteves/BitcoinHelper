@@ -399,7 +399,10 @@ function load_charts() {
         });
         block_no++;
         console.log("Block " + block_no + " is starting.");
-        autohidenotify("Message title here","Block " + block_no + " is starting.", 5000);
+
+        // (COR {green,yellow,red,blue} + titulo + mensagem + tempo de display)
+        autohidenotify(,'green',"Message title here","Block " + block_no + " is starting.", 5000);
+        
         block_counter = 0;
     }
 
