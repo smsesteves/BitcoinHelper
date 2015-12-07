@@ -294,6 +294,7 @@ $(document).ready(function () {
 
 
     // console.log("Block 0 is starting");
+	autohidenotify('green',"BLOCK NOTIFICATIONS","Block 0 is starting.", 3000);
     load_charts();
 
 });
@@ -378,6 +379,7 @@ function load_charts() {
     block_counter++;
     if (block_counter == 10) {
         // console.log("Block " + block_no + " has finished. Giving coins to miners.");
+		autohidenotify('green',"BLOCK NOTIFICATIONS","Block " + block_no + " has finished. Giving coins to miners.", 3000);
         $('#userTable').find('> tbody > tr').each(function (i, row) {
             var miner_spd = parseInt(row.innerHTML.split('~')[1].split(' ')[0]);
             var awarded_coins = (miner_spd / total_spd) * 25;
@@ -398,10 +400,10 @@ function load_charts() {
             }
         });
         block_no++;
-        console.log("Block " + block_no + " is starting.");
+        //console.log("Block " + block_no + " is starting.");
 
         // (COR {green,yellow,red,blue} + titulo + mensagem + tempo de display)
-        autohidenotify('green',"Message title here","Block " + block_no + " is starting.", 5000);
+        autohidenotify('green',"BLOCK NOTIFICATIONS","Block " + block_no + " is starting.", 3000);
         
         block_counter = 0;
     }
